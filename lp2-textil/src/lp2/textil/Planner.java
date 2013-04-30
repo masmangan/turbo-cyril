@@ -1,5 +1,8 @@
 package lp2.textil;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 
  * @author marco.mangan@gmail.com
@@ -7,18 +10,28 @@ package lp2.textil;
  */
 public class Planner {
 
-	public Planner(String string, int i, int j) {
-		// TODO Auto-generated constructor stub
+	private Box area;
+	private List<Shape> cuts;
+	private String material;
+	
+	public Planner(String material, int width, int height) {
+		this.material = material;
+		area = new Box(width, height);
+		cuts = new ArrayList<Shape>();
 	}
 
 	public double getUnusedArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		// FIXME: subtract cuts
+		return area.getArea();
 	}
 
-	public void cut(Box box) {
-		// TODO Auto-generated method stub
-		
+	public void cut(Shape s) {
+		// FIXME: check position and size
+		cuts.add(s);
+	}
+
+	public String getMaterial() {
+		return material;
 	}
 
 }

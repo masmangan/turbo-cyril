@@ -7,4 +7,5 @@ package lp2.textil;
  */
 public abstract class Shape {
 
+	public abstract double getArea(); 
 }
