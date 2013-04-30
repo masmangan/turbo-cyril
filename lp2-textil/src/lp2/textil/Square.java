@@ -1,5 +1,5 @@
 package lp2.textil;
 
-public class Quadrado {
+public class Square {
 
 }

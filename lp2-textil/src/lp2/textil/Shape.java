@@ -5,6 +5,6 @@ package lp2.textil;
  * @author marco.mangan@gmail.com
  *
  */
-public abstract class Figura {
+public abstract class Shape {
 
 }
