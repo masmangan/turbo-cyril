@@ -1,4 +1,4 @@
-package lp2;
+package lp2.textil;
 
 public class Figura {
 
